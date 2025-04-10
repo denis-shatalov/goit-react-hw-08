@@ -1,0 +1,41 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 25px;
+    height: 200px;
+    width: 260px;
+    margin: auto;
+    background-color: whitesmoke;
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+    
+}
+ 
+
+input {
+        margin-bottom: 10px;
+        height: 25px;
+        border-radius: 16px;
+}
+
+.btnAdd {
+    max-width: 100%;
+    background-color: rgb(95, 95, 199);
+    border: none;
+    border-radius: 16px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: rgb(76, 76, 197);
+}
+
+.error{
+    color: orangered;
+    font-size: 14px;
+}
