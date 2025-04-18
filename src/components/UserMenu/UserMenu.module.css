@@ -1,0 +1,31 @@
+.user {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+
+p{
+    margin: 0;
+}
+
+.btn {
+    max-width: 100%;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: rgb(156, 70, 236);
+    box-shadow: 1px 1px 8px blueviolet;
+}
+

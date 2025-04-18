@@ -1,15 +1,15 @@
 import css from "../ContactForm/ContactForm.module.css"
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from "yup"
-import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from '../../redux/contactsOps';
-import { selectContacts } from "../../redux/contactsSlice";
+import { useDispatch} from 'react-redux';
+import { addContact } from '../../redux/contacts/operations';
+
 
 
 export default function ContactForm() {
 
     const dispatch = useDispatch();
-    const contacts = useSelector(selectContacts)
+ 
 
     const formSubmit = (values, { resetForm }) => {
     const newContact = {
@@ -41,18 +41,18 @@ export default function ContactForm() {
             
             <Form className={css.form}>
                 <div className={css.inputbox}>
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">Ім'я</label>
                 <Field className={css.input}  name="name" />
                 <ErrorMessage className={ css.error } name="name"  component="span" />
                 </div>
                 <div className={css.inputbox}>
-                    <label htmlFor="number">Number</label>
+                    <label htmlFor="number">Номер</label>
                 <Field className={css.input} name="number" />
                 <ErrorMessage className={ css.error } name="number" component="span"/>
                 </div>
                 
             
-            <button className={css.btnAdd} type="submit">Add contact</button>
+            <button className={css.btnAdd} type="submit">Додати контакт</button>
             </Form>
         </Formik>
             

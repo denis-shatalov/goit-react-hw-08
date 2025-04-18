@@ -1,0 +1,13 @@
+.link {
+    color: black;
+}
+
+.link:hover {
+    color:blueviolet;
+   
+}
+
+.linkBox {
+    display: flex;
+    gap: 20px;
+}
